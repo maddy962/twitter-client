@@ -1,0 +1,19 @@
+<div class="container pt-5">
+  <div class="float-left"></div>
+  <div class="float-right">
+    <div class="card-deck">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <p class = "card-title">Twitter Login!<br>
+             Click on the below link to Login to your twitter account!</p>
+          <div class="card-text">
+            <form #authenticateForm ="ngForm" (ngSubmit)="authenticate()">
+                <a type="button" (click)="authenticate()" class="btn btn-primary btn-rounded
+                mr-1"><i class="fa fa-twitter"></i>&nbsp;Twitter Login</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

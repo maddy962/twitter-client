@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>TwitterClient</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#top">Madhan's Twitter Client</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive">Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item dropdown">
+              <a class="nav-link dropdown-toggle " data-toggle="dropdown" role="button" href="#"
+                id="dropdownMenu">Popular Tags</a>
+              <div class="dropdown-menu" id="dropdownMenu">
+                <a class="dropdown-item">Politics</a>
+                <a class="dropdown-item">Sport</a>
+                <a class="dropdown-item">Movies</a>
+                <a class="dropdown-item">Technology</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="">Refresh Tweets</a></li>
+            </li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="">Change Account</a></li>
+            </li>
+            <form class="form-inline ml-1">
+              <input type="text" class="form-control textbox mr-1" style="width:10em">
+              <button class="btn-outline-primary ml-2 my-2">Search</button>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <p>&nbsp;</p>
+  <app-root></app-root>
+  <p>&nbsp;</p>
+
+  <footer class="footer  text-muted text-center" style="height:7em">
+    <div class="container">
+      <div class="btn-group btn-grp-sm py-2" role="group">
+        <a href="https://www.facebook.com/madhanchanderasegaran" type="button" class="btn btn-primary btn-rounded
+         mr-1"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/Madhan96291C" type="button" class="btn btn-primary btn-rounded
+         mr-1"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/madhan-kumar-chandrasekaran-44919a79/" type="button" class="btn btn-primary btn-rounded
+         mr-1"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/madhanchanderasegaran" type="button" class="btn btn-primary btn-rounded
+         mr-1"><i class="fa fa-github-alt"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCMlqCobiKqNOcm4EIP_KLIxfkHYPhK8cA",
+    authDomain: "twitter-auth-firebase-9046d.firebaseapp.com",
+    databaseURL: "https://twitter-auth-firebase-9046d.firebaseio.com",
+    projectId: "twitter-auth-firebase-9046d",
+    storageBucket: "twitter-auth-firebase-9046d.appspot.com",
+    messagingSenderId: "811721805262",
+    appId: "1:811721805262:web:5f6cf7cb3582160c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+
+</html>

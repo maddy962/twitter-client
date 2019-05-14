@@ -1,0 +1,10 @@
+body{
+    font-family: "Montserrat, sans-serif";
+    background-image: url("./assets/download.jpg");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
