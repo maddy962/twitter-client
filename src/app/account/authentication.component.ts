@@ -8,11 +8,7 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./authentication.component.css']
 })
 export class AuthenticationComponent implements OnInit {
-
-  loginModel:ILogin = {
-    userName:'',
-    password:''
-  }
+  //Modular Changes
   constructor(private router: Router, private authService:AuthService,private ngZone:NgZone) {
     if(this.authService.isLoggedIn()){
       this.authService.logout();
