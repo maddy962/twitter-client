@@ -22,6 +22,8 @@ export class AuthService {
     return this._firebaseAuth.auth.signInWithPopup(new firebase.auth.TwitterAuthProvider()).then(
       (res)=>{
        localStorage.setItem('authenticatedUser',res.user.uid);
+       localStorage.setItem('oauthkey','740947421975322624-QDKvnJ2YyHLLzIfGV2dRrCIE7Hc6ybW');
+       localStorage.setItem('oauthToken','AfGZnw02IuxWGXY923hMYiKpwm7rjaIq7vzxIU3s6yexq');
        console.log('cookie set');
       }
     );
